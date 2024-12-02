@@ -1,0 +1,24 @@
+* {
+    font-family: "Sour Gummy", serif;
+}
+
+header {
+    background-color: #640D5F;
+}
+.nav-item a{
+    color: #FFB200
+}
+
+#boton-perfil{
+   background-color: #D91656; 
+}
+.nav-item a:hover{
+    color: #D91656;
+}
+#app{
+    color: #D91656 ;
+}
+.boton-cv{
+    background-color: #D91656;
+}
+
