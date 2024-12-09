@@ -32,13 +32,14 @@
 <body>
 
     <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
             <i class="bi bi-journal-code p-3"></i>
-            <span class="fs-2">Anayeli González Escamilla</span>
+            <span class="fs-2 name">Anayeli González Escamilla</span>
         </a>
 
         <ul class="nav nav-pills">
-            <li class="nav-item boton-perfil"><a id="boton-perfil" href="#" class="nav-link active" aria-current="page">Yo</a></li>
+            <li class="nav-item boton-perfil"><a id="boton-perfil" href="#" class="nav-link active"
+                    aria-current="page">Yo</a></li>
             <li class="nav-item"><a href="#featured-3 habilidades" class="nav-link">Habilidades</a></li>
             <li class="nav-item"><a href="#proyectos" class="nav-link">Proyectos</a></li>
             <li class="nav-item"><a href="#testimonios" class="nav-link">Testimonios</a></li>
@@ -61,51 +62,55 @@
                         el ámbito financiero como en el tecnológico. Estoy comprometida en aplicar mis conocimientos y
                         habilidades para aportar valor a proyectos y desafíos profesionales en estas áreas.</p>
                 </div>
-                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                        <button type="button" class="btn btn-outline-secondary btn-lgpx-4 boton-cv">Conoce mi trayectoria</button>
-                    </div>
+                <!--Botón al CV-->
+
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center link-cv">
+                    <button type="button" class="btn btn-lgpx-4 boton-cv">Conoce mi trayectoria</button>
                 </div>
+
+
             </div>
         </div>
+        </div>
         <!--Habilidades-->
-        <div class="habilidades container px-4 py-5" id="featured-3 habilidades">
-            <h2 class="pb-2 border-bottom">Habilidades</h2>
-            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-                <div class="feature col">
-                    <div
-                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-                        <i class="bi bi-pc-display-horizontal px-2"></i>
-                    </div>
+        <div class="caja-habilidades">
+            <div class="habilidades container px-4 py-5" id="featured-3 habilidades">
+                <h2 class="pb-2 border-bottom">Habilidades</h2>
+                <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                    <div class="feature col">
+                        <div class="feature-icon d-inline-flex align-items-center justify-content-center  fs-2 mb-3">
+                            <i class="bi bi-pc-display-horizontal px-2"></i>
+                        </div>
 
-                    <h3 class="fs-2 text-body-emphasis">Desarrollo Frontend</h3>
-                    <p>He creado diferentes sitios web responsivos aplicando los conocimientos adquiridos durante el
-                        bootcamp de Tecnolochicas PRO.</p>
-                </div>
-                <div class="feature col">
-                    <div
-                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-                        <i class="bi bi-magic px-2"></i>
+                        <h3 class="fs-2 subtitle-h">Desarrollo Frontend</h3>
+                        <p>He creado diferentes sitios web responsivos aplicando los conocimientos adquiridos durante el
+                            bootcamp de Tecnolochicas PRO.</p>
                     </div>
-                    <h3 class="fs-2 text-body-emphasis">Creativa</h3>
-                    <p>Soy una persona creativa, siempre buscando nuevas formas de resolver problemas y generar ideas
-                        innovadoras.</p>
+                    <div class="feature col">
+                        <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                            <i class="bi bi-magic px-2"></i>
+                        </div>
+                        <h3 class="fs-2 subtitle-h">Creativa</h3>
+                        <p>Soy una persona creativa, siempre buscando nuevas formas de resolver problemas y generar
+                            ideas
+                            innovadoras.</p>
 
-                </div>
-                <div class="feature col">
-                    <div
-                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-                        <i class="bi bi-journal-code px-2"></i>
                     </div>
-                    <h3 class="fs-2 text-body-emphasis">Estudiante</h3>
-                    <p>Soy estudiante de desarrollo web en constante crecimiento, complementando mi formación en
-                        economía.</p>
+                    <div class="feature col">
+                        <div class="feature-icon d-inline-flex align-items-center justify-content-center  fs-1 mb-3">
+                            <i class="bi bi-journal-code px-2"></i>
+                        </div>
+                        <h3 class="fs-2  subtitle-h">Estudiante</h3>
+                        <p>Soy estudiante de desarrollo web en constante crecimiento, complementando mi formación en
+                            economía.</p>
 
+                    </div>
                 </div>
             </div>
         </div>
         <!-- Proyectos -->
 
-        <div id="proyectos" class="proyectos container">
+        <div id="proyectos" class="proyectos container mt-5">
             <h2 class="pb-2 border-bottom">Proyectos</h2>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                 <!--Proyecto 1-->
@@ -116,9 +121,11 @@
                             <p class="card-text">Mi primer sitio, comenzando una gran historia...</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary"><a target="_blank"
+                                    <button type="button" class="btn btn-sm btn-proyecto"><a
+                                            target="_blank"
                                             href="https://mi-primer-paso-en-desarrollo.vercel.app/">Ver</a></button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary"><a target="_blank"
+                                    <button type="button" class="btn btn-sm btn-proyecto"><a
+                                            target="_blank"
                                             href="https://github.com/anagonesca/Mi-primer-paso-en-desarrollo">Github</a></button>
                                 </div>
                                 <small class="text-body-secondary">HTML, CSS y JS</small>
@@ -131,13 +138,14 @@
                     <div class="card shadow-sm">
                         <img class="bd-placeholder-img card-img-top" src="assets/Clon pinterest.png" alt="">
                         <div class="card-body">
-                            <p class="card-text">Clon de Pinterest.</p>
+                            <p class="card-text">Clon de Pinterest, un proyecto sencillo pero poderoso.</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary"><a target="_blank"
+                                    <button type="button" class="btn btn-sm btn-proyecto"><a
+                                            target="_blank"
                                             href="https://pinterest-clon-topaz-alpha.vercel.app/">Ver</a></button>
-
-                                    <button type="button" class="btn btn-sm btn-outline-secondary"><a target="_blank"
+                                    <button type="button" class="btn btn-sm btn-proyecto"><a
+                                            target="_blank"
                                             href="https://github.com/anagonesca/pinterest-clon">Github</a></button>
 
                                 </div>
@@ -149,13 +157,18 @@
                 <!--Proyecto 3-->
                 <div class="col">
                     <div class="card shadow-sm">
-                        <img class="bd-placeholder-img card-img-top" src="assets/Clon pinterest.png" alt="">
+                        <img class="bd-placeholder-img card-img-top" src="/assets/proyecto-3.png" alt="">
                         <div class="card-body">
-                            <p class="card-text">Priyecto en construcción... Continuamos creciendo</p>
+                            <p class="card-text">Lista de tareas, una pequeña herramienta que nos impulsa a obtener grandes logros...</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                    <button type="button" class="btn btn-sm btn-proyecto"><a
+                                            target="_blank"
+                                            href="https://lista-tareas-tau.vercel.app/
+                                            ">Ver</a></button>
+                                    <button type="button" class="btn btn-sm btn-proyecto"><a
+                                            target="_blank"
+                                            href="https://vercel.com/anayeli-gonzalezs-projects/lista-tareas">Github</a></button>
                                 </div>
                                 <small class="text-body-secondary">HTML, CSS y JS</small>
                             </div>
@@ -254,12 +267,12 @@
 
         <div class="px-4 py-5 my-5 text-center" id="contacto">
             <i class="bi bi-chat-left-dots display-3"></i>
-            <h1 class="display-6 fw-bold text-body-emphasis">Contáctame</h1>
+            <h1 class="display-6 fw-bold contact">Contáctame</h1>
             <div class="col-lg-6 mx-auto">
                 <p class="lead mb-4">Podemos hacer tus proyectos realidad</p>
-                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center btn-mail">
                     <a href="mailto:anagonesca@gmail.com?">
-                        <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Invítame</button>
+                        <button type="button" class="boton-contact btn-lg px-4 gap-5">Invítame</button>
                     </a>
                 </div>
             </div>
@@ -268,15 +281,15 @@
         <div class="container">
             <footer class="py-3 my-4">
                 <ul class="nav justify-content-center border-bottom pb-3 mb-4">
-                    <li class="nav-item"><a target="_blank"
+                    <li class="nav-foot"><a target="_blank"
                             href="https://www.linkedin.com/in/anayeli-g-098a61102/?trk=opento_sprofile_details"
-                            class="nav-link px-2 text-body-secondary"><i class="bi bi-linkedin"></i></a></li>
-                    <li class="nav-item"><a target="_blank" href="https://github.com/anagonesca"
-                            class="nav-link px-2 text-body-secondary"><i class="bi bi-github"></i></a></li>
-                    <li class="nav-item"><a target="_blank" href="https://wa.me/5542615921"
-                            class="nav-link px-2 text-body-secondary"><i class="bi bi-whatsapp"></i></a></li>
+                            class="nav-foot px-2"><i class="bi bi-linkedin"></i></a></li>
+                    <li class="nav-foot"><a target="_blank" href="https://github.com/anagonesca"
+                            class="nav-foot px-2"><i class="bi bi-github"></i></a></li>
+                    <li class="nav-foot"><a target="_blank" href="https://wa.me/5542615921"
+                            class="nav-foot px-2"><i class="bi bi-whatsapp"></i></a></li>
                 </ul>
-                <p class="text-center text-body-secondary">Creado por Anayeli González en el bootcamp de <a
+                <p class="text-center link-tecno">Creado por Anayeli González en el bootcamp de <a
                         target="_blank" href="https://tecnolochicas.mx/">Tecnolochicas PRO</a></p>
             </footer>
         </div>
